@@ -10,7 +10,6 @@ body{
     font-size: 16px;
     line-height: 1.7;
     color: #777;
-    padding: 0px 20px;
 }
 
 .header{
@@ -35,19 +34,24 @@ body{
 
 .logo-box *{
     height: 35px;
+    animation-name: scaleOut;
+    animation-duration: 1s;
 }
+
 
 .text-box{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50% , -50%);
+    text-align: center;
 }
 
 .heading-primary{
     color: #fff;
     text-transform: uppercase;
 }
+
 
 .heading-primary-main{
     display: block;
@@ -64,7 +68,6 @@ body{
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 8px;
-    text-align: center;
     animation: moveInRight .8s ease-out; 
 }
 
@@ -77,6 +80,7 @@ body{
         transform: translateX(10px);
     }
     100%{
+        opacity: 1;
         transform: translateX(0px);
     }
 }
@@ -90,7 +94,18 @@ body{
         transform: translateX(-10px);
     }
     100%{
+        opacity: 1;
         transform: translateX(0px);
     }
 }
 
+@keyframes scaleOut{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
