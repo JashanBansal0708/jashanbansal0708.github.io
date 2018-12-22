@@ -1,1 +1,0 @@
-Just a sample commit in first private repo to learn how pull request works
