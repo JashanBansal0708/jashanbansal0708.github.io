@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
             to bottom,
             rgba(1, 4, 32, 0.801),
@@ -22,22 +22,39 @@ body{
         url(../img/cover_bg_1.jpg);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     position: relative; 
 }
 
 .logo-box{
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: flex;
+    justify-content:space-between;
+    padding: 1.25rem;
 }
 
 .logo-box *{
-    height: 35px;
+    width: 4rem;
+    height: 3rem;
     animation-name: scaleOut;
     animation-duration: 1s;
 }
 
+.icon-box-container{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.icon-box{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-box i{
+    color: white;
+    padding: .5rem 2rem;
+}
 
 .text-box{
     position: absolute;
@@ -46,6 +63,7 @@ body{
     transform: translate(-50% , -50%);
     text-align: center;
 }
+
 
 .heading-primary{
     color: #fff;
