@@ -64,11 +64,15 @@ header{
 
 .icon-box{
     color: white;
-    animation: scaleUp var(--animation-time) ease-in-out; 
+    animation: scaleUp var(--animation-time) ease-in-out;
+    /* width: 70%; */
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around; 
 }
 
 .icon-box i{
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     color: white;
 }
 
@@ -204,10 +208,11 @@ header{
     }
     
     h1{
-        font-size: 1.6rem; 
+        font-size: 1.7rem; 
     }
     
     .my-image img{
-        width: 4rem
+        width: 6rem;
+        margin-bottom: 1rem;
     }
 }
