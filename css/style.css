@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;     
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
 
 :root{
     --primary-color: rgba(1, 4, 32, 0.801);
@@ -18,12 +25,10 @@
 
 
 body{
-    /* font-family: "Roboto", sans-serif; */
     font-family: 'PT Mono', monospace;
     font-weight: 400;
     line-height: 1.7;
-    overflow: hidden;
-    /* width: 100vw; */
+    overflow-x: hidden;
 }
 
 a{
@@ -31,14 +36,20 @@ a{
 }
 
 p{  
-    margin: .75rem ;
+    /* margin: .75rem; */
     font-size:1.5rem;
+    word-wrap: normal;
 }
 
 h1{
     font-size: 3.5rem;
 }
-header{
+
+.bg-light{
+    background: #f3f3f3;
+}
+
+#header{
     height: 100vh;
     background-image: linear-gradient(
             to bottom,
@@ -51,7 +62,7 @@ header{
     position: relative; 
 }
 
-.container{
+#header .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +77,7 @@ header{
     color: white;
     animation: scaleUp var(--animation-time) ease-in-out;
     /* width: 70%; */
-    padding: 0 1rem;
+    padding: 1rem 1rem 0 1rem;
     display: flex;
     justify-content: space-around; 
 }
@@ -128,6 +139,7 @@ header{
 
 .heading-primary{
     color: white;
+    text-align: center;
     font-weight: 400px;
     letter-spacing: .3rem;
     /* animation : scaleOut var(--animation-time) ease-out; */
@@ -194,11 +206,6 @@ header{
 }
 
 
- 
-
-
-
-
 @media screen and (max-width:768px){
     body{
         width: 100vw;
@@ -212,7 +219,62 @@ header{
     }
     
     .my-image img{
-        width: 6rem;
+        width: 9rem;
         margin-bottom: 1rem;
     }
+}
+
+/* _____________________________________________________________________________ */
+
+
+#about .h2{
+    text-align: center;
+    padding: 2rem 0 0rem 0; 
+}
+
+#about .container{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+}
+
+#about .container > *{
+    flex: 1 1 auto;
+}
+
+
+#about .container .info ul{
+    list-style: none;
+}
+
+#about .container .info ul li{
+    display: block;
+}
+#about .container .info .first-block{
+    display: inline-block;
+    width: 25%;
+    padding: .5rem 0;
+    font-weight: 700;
+} 
+
+#about .container .info .second-block{
+    display: inline-block;
+    width: 70%;
+    color: #8d8989
+}
+
+#about .container .intro p{
+    display: inline-block;
+    text-align: justify;
+    color: #8d8989
+}
+
+@media screen and (max-width:768px){
+    #about .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
