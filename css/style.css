@@ -238,26 +238,24 @@ h1{
     margin: 0 auto;
     padding: 1rem 0;
     display: flex;
+    justify-content: space-between;
 }
 
 #about .container > *{
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    padding: 1rem 0;
 }
 
-
-#about .container .info ul{
-    list-style: none;
-}
-
-#about .container .info ul li{
-    display: block;
-}
 #about .container .info .first-block{
     display: inline-block;
     width: 25%;
-    padding: .5rem 0;
+    padding: .5rem 1rem;
     font-weight: 700;
-} 
+}
+
+ul{
+    list-style: none;
+}
 
 #about .container .info .second-block{
     display: inline-block;
