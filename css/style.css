@@ -16,10 +16,10 @@ h3{
 }
 
 :root{
-    --primary-color: rgba(1, 4, 32, 0.801);
-    /* --secondary-color: rgb(24, 185, 24); */ 
-    --hover-primary-color: rgba(3, 8, 49, 0.801);
-    /* --hover-secondary-color: rgb(11, 148, 11) */
+    --primary-color: rgba(47, 2, 53, 0.801);
+    --secondary-color:rgba(38, 230, 21, 0.701); 
+    --hover-primary-color: rgb(70, 4, 66,.801);
+    --hover-secondary-color: rgba(16, 92, 9, 0.8);
     --animation-time : 1.2s;
 }
 
@@ -49,17 +49,28 @@ h1{
     background: #f3f3f3;
 }
 
-#header{
+header{
     height: 100vh;
     background-image: linear-gradient(
             to bottom,
-            rgba(1, 4, 32, 0.801),
-            rgba(3, 8, 49, 0.801)
+            rgba(1, 4, 32, 0.701),
+            rgba(3, 8, 49, 0.701)
         ),
-        url(../img/cover_bg_1.jpg);
+        url(../img/pexels-photo-436775.jpeg);
     background-size: cover;
     background-position: top;
-    position: relative; 
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    animation: start 1s ease-out; 
+}
+start{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #header .container{
@@ -244,12 +255,13 @@ h1{
 #about .container > *{
     flex: 1 1 0;
     padding: 1rem 0;
+    max-width: 45%;
 }
 
 #about .container .info .first-block{
     display: inline-block;
-    width: 25%;
-    padding: .5rem 1rem;
+    width: auto;
+    padding: .5rem 0;
     font-weight: 700;
 }
 
@@ -257,9 +269,10 @@ ul{
     list-style: none;
 }
 
+
 #about .container .info .second-block{
     display: inline-block;
-    width: 70%;
+    width: auto;
     color: #8d8989
 }
 
@@ -269,10 +282,63 @@ ul{
     color: #8d8989
 }
 
+.github-resume{
+    display: inline-block;
+    /* background: rgba(38, 230, 21, 0.701); */
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: .3rem 0.3rem .5rem  #7eee62;
+    transition: all 1s ease-in-out;
+}
+
+.github-resume:hover{
+    background: var(--hover-secondary-color);
+    transform: scale(1.05); 
+}
+
+
 @media screen and (max-width:768px){
     #about .container{
         display: flex;
         flex-direction: column;
     }
+    #about .container > *{
+        padding: 1rem 0;
+        max-width: 100%;
+    }
     
+}
+
+
+.myStyle{   
+    animation-name: firstPage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes firstPage{
+    from{
+        background : linear-gradient(
+        to bottom,
+        rgba(26, 160, 14, 0.701),
+        rgba(151, 241, 67, 0.701)
+    );
+    opacity: 0;
+    }
+    to{
+        background : linear-gradient(
+        to bottom,
+        rgba(26, 160, 14, 0.701),
+        rgba(151, 241, 67, 0.701)
+    );
+    opacity: 1;
+    }
+}
+
+
+.dark{
+    color: white;
+    background: black;
 }
