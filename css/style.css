@@ -15,10 +15,13 @@ h3{
     font-size: 1.8rem;
 }
 
+/* rgba(197, 14, 69, 0.701); */
+
 :root{
-    --primary-color: rgba(47, 2, 53, 0.801);
+    --primary-color: rgba(138, 9, 48, 0.701);
     --secondary-color:rgba(38, 230, 21, 0.701); 
-    --hover-primary-color: rgb(70, 4, 66,.801);
+    --hover-primary-color: rgba(87, 4, 29, 0.701);
+    --primary-shadow: rgba(167, 50, 85, 0.701);
     --hover-secondary-color: rgba(16, 92, 9, 0.8);
     --animation-time : 1.2s;
 }
@@ -62,15 +65,6 @@ header{
     position: relative;
     max-width: 100%;
     height: auto;
-    animation: start 1s ease-out; 
-}
-start{
-    from{
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 #header .container{
@@ -285,17 +279,17 @@ ul{
 .github-resume{
     display: inline-block;
     /* background: rgba(38, 230, 21, 0.701); */
-    background: var(--secondary-color);
+    background: var(--primary-color);
     color: white;
     padding: 0.2rem 1rem;
     border-radius: 0.5rem;
-    box-shadow: .3rem 0.3rem .5rem  #7eee62;
+    box-shadow: .3rem 0.3rem .5rem var(--primary-shadow); 
     transition: all 1s ease-in-out;
 }
 
 .github-resume:hover{
-    background: var(--hover-secondary-color);
-    transform: scale(1.05); 
+    background: var(--hover-primary-color);
+    transform: scale(1.03); 
 }
 
 
@@ -314,26 +308,18 @@ ul{
 
 .myStyle{   
     animation-name: firstPage;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes firstPage{
     from{
-        background : linear-gradient(
-        to bottom,
-        rgba(26, 160, 14, 0.701),
-        rgba(151, 241, 67, 0.701)
-    );
-    opacity: 0;
+        background : var(--primary-color);
+        opacity: 0;
     }
     to{
-        background : linear-gradient(
-        to bottom,
-        rgba(26, 160, 14, 0.701),
-        rgba(151, 241, 67, 0.701)
-    );
-    opacity: 1;
+        background : var(--primary-color);
+        opacity: 1;
     }
 }
 
