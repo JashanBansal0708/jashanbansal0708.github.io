@@ -480,6 +480,7 @@ ul{
 .certificates{
     background: var(--primary-color);
     width: 100vw;
+    padding-bottom: 1rem;
 }
 
 .certificates h2{
@@ -494,8 +495,8 @@ ul{
 
 .certificates-layout{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .certificate{
@@ -556,14 +557,12 @@ ul{
     .certificates-layout{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     .certificate{
-        width: 90vw;
-        height: 45vh;
-        margin: 2rem 0;
+        width: 100%;
+        height: auto;
+        margin: 1rem 0 2rem 0;
     }      
 
     .middle-justify+div a{
