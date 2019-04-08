@@ -456,7 +456,7 @@ ul{
     
     #even-block{
         left: 1.5rem;;
-    }
+    } 
     
     #even-block h3,
     #even-block p{
@@ -472,4 +472,101 @@ ul{
         color: white;
     }
         
+}
+
+
+/* ______________________________________________________ */
+
+.certificates{
+    background: var(--primary-color);
+    width: 100vw;
+}
+
+.certificates h2{
+    text-align: center;
+    color: white;
+}
+
+.certificates .container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.certificates-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.certificate{
+    width: 35vw;
+    height: auto;
+    text-align: justify;
+    margin: 2rem 0;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: translatey(1rem); 
+}
+ 
+.certificates .show{
+    visibility: visible;
+    opacity: 1;
+    transform: translatey(0rem);  
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.certificate i{
+    background: white;
+    color: var(--primary-color);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.middle{
+    text-align: center;
+    color: white;
+}
+
+.middle-justify{
+    text-align: justify;
+    color: white;
+}
+
+.middle-justify+div{
+    display: flex;
+    justify-content: center;
+}
+
+.middle-justify+div a{
+    color: var(--primary-color);
+    font-size:1.5rem;
+    background: white;
+    padding: 0rem .7rem;
+    border-radius: 0.5rem;
+    box-shadow: .3rem 0.3rem .5rem #6b0909;  
+}
+
+@media screen and (max-width:768px){
+    .certificates-layout{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .certificate{
+        width: 90vw;
+        height: 45vh;
+        margin: 2rem 0;
+    }      
+
+    .middle-justify+div a{
+        font-size: 1rem;
+    }
 }

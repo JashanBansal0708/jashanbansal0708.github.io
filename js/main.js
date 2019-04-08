@@ -23,6 +23,7 @@ if (window.scrollY > 300) {
 
 const items = document.querySelectorAll('.resume li');
 const items2 = document.querySelectorAll('.skills li');
+const items3 = document.querySelectorAll('.certificates .certificate');
 
 const isInViewport = el => {
   const rect = el.getBoundingClientRect();
@@ -42,6 +43,11 @@ const run = () =>{
     }
   });
   items2.forEach(item => {
+    if (isInViewport(item)) {
+      item.classList.add('show');
+    }
+  });
+  items3.forEach(item => {
     if (isInViewport(item)) {
       item.classList.add('show');
     }
