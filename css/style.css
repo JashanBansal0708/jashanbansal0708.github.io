@@ -337,31 +337,37 @@ ul{
 
 /* ___________________________________________________________________ */
 
-.resume{
+.resume,
+.skills{
     background: #f3f3f3;
     padding-bottom: 3rem;
 }
 
-.resume ul{
+.resume ul,
+.skills ul{
     width: 90%;
     margin: 0 auto;
 }
 
-.education-heading{
+.education-heading,
+.skills-heading{
     text-align: center;
 }
 
-.resume i{
+.resume i,
+.skills i{
     background: var(--primary-color);
     position: absolute;
     border-radius: 50%;
     padding: 1rem;
     left: -1.5rem;
     color: white;
+    visibility: hidden;
     /* display: inline; */
 }
 
-.resume ul li {
+.resume ul li,
+.skills ul li {
     list-style: none;
     position: relative;
     width: .2rem;
@@ -370,11 +376,13 @@ ul{
     background: #8d8989;
 }
 
-.resume ul li div h3{
+.resume ul li div h3,
+.skills ul li div h3{
     color: black;
     text-align: left;
 }
-.resume ul li div {
+.resume ul li div,
+.skills ul li div {
     position: relative;
     /* bottom: 0; */
     width: 43vw;
@@ -393,12 +401,19 @@ ul{
     left: -47vw;
 }
 
-.resume ul li.show div {
+.resume ul li.show div,
+.skills ul li.show div {
     transform: none;
     transform: translatey(0rem);
     visibility: visible;
     opacity: 1;
 }
+
+.resume li.show i,
+.skills li.show i{
+    visibility: visible; 
+}
+
 
 #even-block h3,
 #even-block p{
@@ -407,12 +422,14 @@ ul{
 
 
 @media screen and (max-width: 768px){
-    .education-heading{
+    .education-heading,
+    .skills-heading{
         text-align: left;
         padding: 1rem;
     }
     
-    .resume ul li {
+    .resume ul li,
+    .skills ul li {
         list-style: none;
         position: relative;
         width: .2rem;
@@ -421,10 +438,12 @@ ul{
         background: #8d8989;
     }    
     
+    .resume ul li div h3,
     .resume ul li div h3{
         color: black;
         text-align: left;
     }
+    .resume ul li div,
     .resume ul li div {
         position: relative;
         /* bottom: 0; */
@@ -437,14 +456,7 @@ ul{
     }
     
     #even-block{
-        left: 1.5rem;;
-    }
-    
-    #even-block h3,
-    #even-block p{
-        text-align: left;   
-    }
-    .resume i{
+        left: 1.5rem;
         background: var(--primary-color);
         position: absolute;
         border-radius: 50%;
