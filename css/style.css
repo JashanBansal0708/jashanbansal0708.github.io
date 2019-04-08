@@ -339,6 +339,7 @@ ul{
 
 .resume{
     background: #f3f3f3;
+    padding-bottom: 3rem;
 }
 
 .resume ul{
@@ -382,13 +383,21 @@ ul{
     color: #8d8989;
     text-align: left;
     padding-top: -50px;
-    /* transition: all 0.5s ease-in-out; */
-    /* visibility: hidden; */
-    /* opacity: 0; */
+    transition: all 0.5s ease-in-out;
+    transform: translatey(1rem);
+    visibility: hidden;
+    opacity: 0;
 }
 
 #even-block{
     left: -47vw;
+}
+
+.resume ul li.show div {
+    transform: none;
+    transform: translatey(0rem);
+    visibility: visible;
+    opacity: 1;
 }
 
 #even-block h3,
@@ -425,9 +434,6 @@ ul{
         color: #8d8989;
         text-align: left;
         padding-top: -50px;
-        /* transition: all 0.5s ease-in-out; */
-        /* visibility: hidden; */
-        /* opacity: 0; */
     }
     
     #even-block{
@@ -445,7 +451,6 @@ ul{
         padding: .5rem;
         left: -1rem;
         color: white;
-        /* display: inline; */
     }
         
 }
