@@ -507,7 +507,7 @@ ul{
     transition: all 0.5s ease-in-out;
     visibility: hidden;
     opacity: 0;
-    transform: translatey(1rem); 
+    transform: translatey(1rem);
 }
  
 .certificates .show{
@@ -563,6 +563,9 @@ ul{
         width: 100%;
         height: auto;
         margin: 1rem 0 2rem 0;
+        border-bottom: 10px;
+        border-color: white; 
+        border-style: dotted;
     }      
 
     .middle-justify+div a{
