@@ -458,12 +458,9 @@ ul{
         left: 1.5rem;;
     } 
     
-    #even-block h3{
-        text-align: left;   
-    }
-
+    #even-block h3,
     #even-block p{
-        text-align: justify;
+        text-align: left;   
     }
     .resume i,
     .skills i{
@@ -475,10 +472,6 @@ ul{
         color: white;
     }
         
-}
-
-.best-center{
-    text-align: justify;
 }
 
 
@@ -574,9 +567,5 @@ ul{
 
     .middle-justify+div a{
         font-size: 1rem;
-    }
-
-    .best-center{
-        text-align: justify;
     }
 }
