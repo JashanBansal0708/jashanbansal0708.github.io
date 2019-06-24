@@ -18,273 +18,283 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    
     <link rel="stylesheet" href="css/style.css">
     <title>Jashan Bansal</title>
-
+    <script>
+        setTimeout(() => {
+            document.querySelector(".spinner-center-on").style.display = "none";
+            document.querySelector(".spinner-center-off").style.display = "block";  
+        }, 2000);
+    </script>
 </head>
 <body>
-    <header id="header" class="header">
-            <div class="logo-box">
-            <img src="img/logo-corner3.png" alt="Logo" class="logo logo1">
-            <img src="img/logo-corner3.png" alt="Logo" class="logo logo2">
-        </div>
-        <div class="container">
-            
-            <div class="my-image">
-                <img src="./img/IMG_20180311_131505.jpg" alt="My Image">
-            </div>
-
-            <div class="heading-primary">
-                <h1>Jashan Bansal</h1>
-            </div>
-
-            <div class="heading-secondary">
-                <p>CSE Student / Programmer</p>
-            </div>
+    <div class="spinner-center-on"><div class="lds-ripple"><div></div><div></div></div></div>
     
-            <div class="icon-box">
-                <a href="https://github.com/JashanBansal0708" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a> 
-                <a href="https://twitter.com/JashanBansal078" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/jashanbansal0708/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a> 
+    <div class="spinner-center-off">
+        <header id="header" class="header">
+                <div class="logo-box">
+                <img src="img/logo-corner3.png" alt="Logo" class="logo logo1">
+                <img src="img/logo-corner3.png" alt="Logo" class="logo logo2">
             </div>
-        </div>
-    </header>
-
-    <section id="about" class="bg-light">
-        <h2 class="h2">About Me</h2>
-        <div class="container">
-            <div class="intro">
-                    <h3>
-                        Hi There!
-                    </h3>
-                    <p>
-                        I am Jashan Bansal. I am Pursuing Computer Science Engineering at Punjabi University Patiala. I love to explore the new Technologies. All of my projects and work is present on Github, you can checkout there <a href="https://www.github.com/jashanbansal0708" class="github-resume" target="_blank"> Github </a>
-                    </p>
-                </div>
-            <div class="info" >
-                <ul>
-                    <li>
-                        <p class="first-block">
-                            Phone:
-                        </p>
-                        <p class="second-block">
-                            +91-8427843410
-                        </p>
-                    </li>
-                    <li>
-                        <p class="first-block">
-                            Email:
-                        </p>
-                        <p class="second-block">
-                            jashanbansal7856@yahoo.com
-                        </p>
-                    </li>
-                    <li>
-                        <p class="first-block">
-                            Address:
-                        </p>
-                        <p class="second-block">
-                            Punjabi University, Patiala
-                        </p>
-                    </li>
-                    <li>
-                        <p class="first-block">
-                            Github Resume:
-                        </p>
-                        <p class="second-block">
-                            <a href="http://resume.github.io/?jashanbansal0708" class="github-resume" target="_blank"> Resume </a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="resume" id="resume">
-        <h2 class="education-heading">Education</h2>
-        <ul>
-            <li>
-                <i class="fas fa-graduation-cap"></i>  
-                <div>
-                    <h3>
-                        Bachelors 
-                    </h3>
-                    <p>Punjabi University (2016-Present)</p>
-                    <p>Pursuing Computer Science and Engg. with a current CGPA of 8.44</p>
-                </div>
-            </li>
-            <li>
-                <i class="fas fa-graduation-cap"></i>
-                <div id="even-block">
-                    <h3 >
-                        Senior Secondary Education
-                    </h3>
-                    <p >Vidya Bharti School, Mansa (Completed 2016)</p>
-                    <p>Completed Senior secondary Education with a percentage of 94.00</p>
-                </div>
-            </li>
-            <li>
-                <i class="fas fa-graduation-cap"></i>
-                <div>
-                    <h3>
-                        Secondary Education
-                    </h3>
-                    <p>Vidya Bharti School, Mansa (Completed 2014)</p>
-                    <p>Completed Secondary Education with a percentage of 81.52</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <section class="skills" id="skills">
-        <h2 class="skills-heading">Skills</h2>
-        <ul>
-            <li>
-                <i class="fab fa-html5"></i>
-                <div id="even-block">
-                    <h3>
-                        HTML5
-                    </h3>
-                    <p>Skill level( 85% )</p>
-                    <p>A good hold on all the majorly used markup tags.</p>
-                </div>
-            </li>
-            <li>
-                <i class="fab fa-css3"></i>
-                <div>
-                    <h3>
-                        CSS3
-                    </h3>
-                    <p>Skill level( 80% )</p>
-                    <p>A good hold to create beautiful websites, but not much experience in creating responsive websites by using CSS3 only. This portfolio is completely written in CSS3 (No libraries), you can get idea of my skill level from this.</p>
-                </div>
-            </li>
-            <li>
-                <i class="fab fa-js-square"></i>
-                <div id="even-block">
-                    <h3 >
-                        JavaScript
-                    </h3>
-                    <p>SKill Level( 85% )</p>
-                    <p>I learned JavaScript as a Programming language, not just as a browser Programming. I have knowledge about various concepts like closures, prototypes, IIFE Syntax, ES6 etc</p>
-                </div>
-            </li>
-            <li>
-                <i class="fab fa-node-js"></i>
-                <div>
-                    <h3>
-                        Node.js 
-                    </h3>
-                    <p>skill level(70%)</p>
-                    <p>I know how to use Javascript on the Server. Also know about the NPM and Express.js. I have also a begineer level experience in Angular.</p>
-                </div>
-            </li>
-
-            <li>
-                <i class="fab fa-cuttlefish"></i>
-                <div id="even-block">
-                    <h3>
-                        C Programming
-                    </h3>
-                    <p>Skill level( 80%)</p>
-                    <p>A strong hold on the pointers in C programming at any number of levels.</p>
-                </div>
-            </li>
-
-            <li>
-                <i class="fab fa-java"></i>
-                <div>
-                    <h3>
-                        Core Java
-                    </h3>
-                    <p>skill level(75%)</p>
-                    <p>A good hold on the OOP's concepts, but not have much experience with the Threads.</p>
-                </div>
-            </li>
-            
-            <li>
-                <i class="fab fa-python"></i>
-                <div id="even-block">
-                    <h3>
-                        Python 
-                    </h3>
-                    <p>skill level(80%)</p>
-                    <p>A good hold on the basic concepts of Python and able to write simple python scripts to automate the simple computer tasks.</p>
-                </div>
-            </li>
-
-            <li>
-                <i class="fab fa-github"></i>
-                <div>
-                    <h3>
-                        Git/ Github 
-                    </h3>
-                    <p>skill level(85%)</p>
-                    <p>Know all the basic daily using concepts of this Distributed Version Control System.</p>
-                </div>
-            </li>
-
-            <li>
-                <i class="fas fa-database"></i>
-                <div id="even-block">
-                    <h3>
-                        MySQL 
-                    </h3>
-                    <p>skill level(80%)</p>
-                    <p>Know all the basics of how to create the normalized Databases and querying Data.</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-
+            <div class="container">
                 
-    <section class="certificates">
-        <div class="container">
-            <h2>Certifications</h2>
-            <div class="certificates-layout">
-                <div class="certificate">
-                    <div class="icon">
-                        <i class="far fa-file-code fa-6x"></i>
-                    </div>
-                    <h3 class="middle">Responsive web design</h3>
-                    <p class="middle-justify">Earned this certificate at <strong>Freecodecamp</strong> by completing 160+ challenges and 5 simple projects</p>
-                    <div>
-                        <a href="https://www.freecodecamp.org/certification/jashanbansal0708/responsive-web-design" target="_blank" >Verify</a>
-                    </div>   
+                <div class="my-image">
+                    <img src="./img/IMG_20180311_131505.jpg" alt="My Image">
                 </div>
-                <div class="certificate">
-                    <div class="icon">
-                        <i class="fab fa-python fa-6x"></i>
-                    </div>
-                    <h3 class="middle">Python Programming track</h3>
-                    <p class="middle-justify">Earned this certificate at <strong>Datacamp</strong> by completing Python Programming track which includes 4 courses, in which i have completed more the 230+ python exercises.</p>
-                    <div>
-                        <a href="https://www.datacamp.com/statement-of-accomplishment/track/9b7d3160e9c63fbf62f8789dedba9fba57ca291e" target="_blank">Verify</a>
-                    </div>   
+    
+                <div class="heading-primary">
+                    <h1>Jashan Bansal</h1>
+                </div>
+    
+                <div class="heading-secondary">
+                    <p>CSE Student / Programmer</p>
+                </div>
+        
+                <div class="icon-box">
+                    <a href="https://github.com/JashanBansal0708" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a> 
+                    <a href="https://twitter.com/JashanBansal078" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/jashanbansal0708/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a> 
                 </div>
             </div>
-            <div class="certificates-layout">
-                <div class="certificate">
+        </header>
+    
+        <section id="about" class="bg-light">
+            <h2 class="h2">About Me</h2>
+            <div class="container">
+                <div class="intro">
+                        <h3>
+                            Hi There!
+                        </h3>
+                        <p>
+                            I am Jashan Bansal. I am Pursuing Computer Science Engineering at Punjabi University Patiala. I love to explore the new Technologies. All of my projects and work is present on Github, you can checkout there <a href="https://www.github.com/jashanbansal0708" class="github-resume" target="_blank"> Github </a>
+                        </p>
+                    </div>
+                <div class="info" >
+                    <ul>
+                        <li>
+                            <p class="first-block">
+                                Phone:
+                            </p>
+                            <p class="second-block">
+                                +91-8427843410
+                            </p>
+                        </li>
+                        <li>
+                            <p class="first-block">
+                                Email:
+                            </p>
+                            <p class="second-block">
+                                jashanbansal7856@yahoo.com
+                            </p>
+                        </li>
+                        <li>
+                            <p class="first-block">
+                                Address:
+                            </p>
+                            <p class="second-block">
+                                Punjabi University, Patiala
+                            </p>
+                        </li>
+                        <li>
+                            <p class="first-block">
+                                Github Resume:
+                            </p>
+                            <p class="second-block">
+                                <a href="http://resume.github.io/?jashanbansal0708" class="github-resume" target="_blank"> Resume </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="resume" id="resume">
+            <h2 class="education-heading">Education</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>  
+                    <div>
+                        <h3>
+                            Bachelors 
+                        </h3>
+                        <p>Punjabi University (2016-Present)</p>
+                        <p>Pursuing Computer Science and Engg. with a current CGPA of 8.44</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div id="even-block">
+                        <h3 >
+                            Senior Secondary Education
+                        </h3>
+                        <p >Vidya Bharti School, Mansa (Completed 2016)</p>
+                        <p>Completed Senior secondary Education with a percentage of 94.00</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h3>
+                            Secondary Education
+                        </h3>
+                        <p>Vidya Bharti School, Mansa (Completed 2014)</p>
+                        <p>Completed Secondary Education with a percentage of 81.52</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    
+        <section class="skills" id="skills">
+            <h2 class="skills-heading">Skills</h2>
+            <ul>
+                <li>
+                    <i class="fab fa-html5"></i>
+                    <div id="even-block">
+                        <h3>
+                            HTML5
+                        </h3>
+                        <p>Skill level( 85% )</p>
+                        <p>A good hold on all the majorly used markup tags.</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-css3"></i>
+                    <div>
+                        <h3>
+                            CSS3
+                        </h3>
+                        <p>Skill level( 80% )</p>
+                        <p>A good hold to create beautiful websites, but not much experience in creating responsive websites by using CSS3 only. This portfolio is completely written in CSS3 (No libraries), you can get idea of my skill level from this.</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-js-square"></i>
+                    <div id="even-block">
+                        <h3 >
+                            JavaScript
+                        </h3>
+                        <p>SKill Level( 85% )</p>
+                        <p>I learned JavaScript as a Programming language, not just as a browser Programming. I have knowledge about various concepts like closures, prototypes, IIFE Syntax, ES6 etc</p>
+                    </div>
+                </li>
+                <li>
+                    <i class="fab fa-node-js"></i>
+                    <div>
+                        <h3>
+                            Node.js 
+                        </h3>
+                        <p>skill level(70%)</p>
+                        <p>I know how to use Javascript on the Server. Also know about the NPM and Express.js. I have also a begineer level experience in Angular.</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <i class="fab fa-cuttlefish"></i>
+                    <div id="even-block">
+                        <h3>
+                            C Programming
+                        </h3>
+                        <p>Skill level( 80%)</p>
+                        <p>A strong hold on the pointers in C programming at any number of levels.</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <i class="fab fa-java"></i>
+                    <div>
+                        <h3>
+                            Core Java
+                        </h3>
+                        <p>skill level(75%)</p>
+                        <p>A good hold on the OOP's concepts, but not have much experience with the Threads.</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <i class="fab fa-python"></i>
+                    <div id="even-block">
+                        <h3>
+                            Python 
+                        </h3>
+                        <p>skill level(80%)</p>
+                        <p>A good hold on the basic concepts of Python and able to write simple python scripts to automate the simple computer tasks.</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h3>
+                            Git/ Github 
+                        </h3>
+                        <p>skill level(85%)</p>
+                        <p>Know all the basic daily using concepts of this Distributed Version Control System.</p>
+                    </div>
+                </li>
+    
+                <li>
+                    <i class="fas fa-database"></i>
+                    <div id="even-block">
+                        <h3>
+                            MySQL 
+                        </h3>
+                        <p>skill level(80%)</p>
+                        <p>Know all the basics of how to create the normalized Databases and querying Data.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    
+                    
+        <section class="certificates">
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="certificates-layout">
+                    <div class="certificate">
                         <div class="icon">
-                            <i class="fab fa-github fa-6x"></i>
+                            <i class="far fa-file-code fa-6x"></i>
                         </div>
-                        <h3 class="middle">Introduction to Git</h3>
-                        <p class="middle-justify">Earned this certificate at <strong>Datacamp</strong> by completing Intruction to Git for data Science Course, in which i have completed 46 exercises.</p>
+                        <h3 class="middle">Responsive web design</h3>
+                        <p class="middle-justify">Earned this certificate at <strong>Freecodecamp</strong> by completing 160+ challenges and 5 simple projects</p>
                         <div>
-                            <a href="https://www.datacamp.com/statement-of-accomplishment/course/86e59519e63c538c89af7b27fecba07424480ee7" target="_blank">Verify</a>
-                        </div>
+                            <a href="https://www.freecodecamp.org/certification/jashanbansal0708/responsive-web-design" target="_blank" >Verify</a>
+                        </div>   
                     </div>
                     <div class="certificate">
                         <div class="icon">
-                            <i class="fab fa-java fa-6x"></i>
+                            <i class="fab fa-python fa-6x"></i>
                         </div>
-                        <h3 class="middle">JAVA Programming</h3>
-                        <p class="middle-justify">Earned this certificate at <strong>slickSoft Technologies</strong> by successfully completed my Summer Training.</p>
+                        <h3 class="middle">Python Programming track</h3>
+                        <p class="middle-justify">Earned this certificate at <strong>Datacamp</strong> by completing Python Programming track which includes 4 courses, in which i have completed more the 230+ python exercises.</p>
                         <div>
-                            <a href="https://drive.google.com/file/d/1ZOT_dDZAd92QuFbDpQMRV5uavLC83GBn/view?usp=sharing" target="_blank">Verify</a>
-                        </div>
+                            <a href="https://www.datacamp.com/statement-of-accomplishment/track/9b7d3160e9c63fbf62f8789dedba9fba57ca291e" target="_blank">Verify</a>
+                        </div>   
                     </div>
+                </div>
+                <div class="certificates-layout">
+                    <div class="certificate">
+                            <div class="icon">
+                                <i class="fab fa-github fa-6x"></i>
+                            </div>
+                            <h3 class="middle">Introduction to Git</h3>
+                            <p class="middle-justify">Earned this certificate at <strong>Datacamp</strong> by completing Intruction to Git for data Science Course, in which i have completed 46 exercises.</p>
+                            <div>
+                                <a href="https://www.datacamp.com/statement-of-accomplishment/course/86e59519e63c538c89af7b27fecba07424480ee7" target="_blank">Verify</a>
+                            </div>
+                        </div>
+                        <div class="certificate">
+                            <div class="icon">
+                                <i class="fab fa-java fa-6x"></i>
+                            </div>
+                            <h3 class="middle">JAVA Programming</h3>
+                            <p class="middle-justify">Earned this certificate at <strong>slickSoft Technologies</strong> by successfully completed my Summer Training.</p>
+                            <div>
+                                <a href="https://drive.google.com/file/d/1ZOT_dDZAd92QuFbDpQMRV5uavLC83GBn/view?usp=sharing" target="_blank">Verify</a>
+                            </div>
+                        </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <script src="./js/main.js"></script>
+        </section>
+        <script src="./js/main.js"></script>        
+    </div> 
 </body>
+
 </html>
