@@ -68,7 +68,7 @@ h3{
 }
 
 .spinner-center-off{
-    display: none;
+    visibility: hidden;
 }
   
 
