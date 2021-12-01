@@ -122,7 +122,8 @@ header{
 
 
 .my-image img{
-    width: 15rem;
+    height: 15rem
+    width: 12rem;
     animation-name: scaleOut;
     border-radius: 50%;
 }
