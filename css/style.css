@@ -120,10 +120,8 @@ header{
     animation-duration: var(--animation-time);
 }
 
-
 .my-image img{
-    height: 15rem
-    width: 12rem;
+    width: 15rem;
     animation-name: scaleOut;
     border-radius: 50%;
 }
